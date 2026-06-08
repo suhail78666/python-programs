@@ -1,0 +1,11 @@
+a=input("enter any cahracter:")
+up=0
+lw=0
+while(a not in "a e i o u A E I O U"):
+    a=input("enter any cahracter:")
+    if a.isupper():
+        up=up+1
+    if a.islower():
+        lw=lw+1
+print("upper case:",up)
+print("lower case:",lw)        
