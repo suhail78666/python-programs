@@ -1,0 +1,5 @@
+name=["ram","sakshi","kayadu","jeba kumar"]
+age=[24,101,46,90]
+for i in range(4):
+    s=sorted(zip (age,name))
+    print("{}.{} age is {}".format (i+1,s[i][1],s[i][0]))
