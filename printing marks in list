@@ -1,0 +1,7 @@
+name=["ram","sakshi","kayadu","jeba kumar"]
+marks=[40,30,43,90]
+k=0
+for i in range(4):
+    if  marks[i]>=40:
+        k=k+1
+        print("{}.{} {}".format(k,name[i],marks[i]))
