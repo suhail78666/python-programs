@@ -1,0 +1,12 @@
+class rect():
+    def __init__(self):
+        self.l=int(input("enter length:"))
+        self.b=int(input("enter breadth:"))
+    def display(self):
+         print(self.l*self.b)
+k=int(input("enter number of triangles:"))
+l=[]
+for i in range(k):
+    r=rect()
+    l.append(r)
+    r.display()
