@@ -1,0 +1,17 @@
+def cop(a,b):
+    return jebakumar(a,b) == 1
+
+def jebakumar(a,b):
+    while b != 0:
+        rem = a % b
+        a = b
+        b = rem
+    return a
+
+k = int(input("Enter any number: "))
+
+for a in range(k):
+    for b in range(k):
+        for c in range(k):
+            if c*c + b*b == a*a and cop(a,b) and cop(a,c) and cop(b,c):
+                print(c, b, a)
